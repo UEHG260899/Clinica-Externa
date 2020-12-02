@@ -1,3 +1,68 @@
 <resources>
     <string name="app_name">Clinica Externa</string>
+    <string name="title_activity_drawer_clinica">DrawerClinica</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Navigation Drawer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_crear">Crear</string>
+    <string name="menu_editar">Editar</string>
+    <string name="menu_listar">Listar</string>
+    <string name="menu_eliminar">Eliminar</string>
+    <string name="menu_creditos">Créditos</string>
+
+
+    <!--Fragment Home-->
+    <string name="titulo_home">¡Bienvenido@</string>
+    <string name="subtitulo_home">Para comenzar, da click en el menú de la izquierda</string>
+
+    <!--Fragment Crear-->
+    <string name="titulo_crear">Nuevo paciente</string>
+    <string name="identificador">ID</string>
+    <string name="nombre_pac">Nombre del paciente</string>
+    <string name="fecha_in">Fecha de Ingreso</string>
+    <string name="edad">Edad</string>
+    <string name="estatura">Estatura</string>
+    <string name="peso">Peso</string>
+    <string name="btn_limpia">Limpiar</string>
+    <string name="btn_guardar">Guardar</string>
+
+
+    <!--Fragment Editar-->
+    <string name="titulo_editar">Editar paciente</string>
+    <string name="btn_buscar">Buscar</string>
+    <!--Fragment Listar-->
+    <string name="titulo_listar">Listar pacientes</string>
+
+    <!--Fragment Eliminar-->
+    <string name="titulo_eliminar">Eliminar Pacientes</string>
+    <string name="btn_eliminar">Eliminar Paciente</string>
+    <string name="sexo">Género</string>
+    <string name="doctor">Doctor</string>
+    <string name="area">Área</string>
+
+    <!--Fragment Creditos-->
+    <string name="escuela">Instituto Tecnológico de Toluca</string>
+    <string name="materia">Desarrollo de aplicaciones móviles</string>
+    <string name="alumno">Uriel Enrique Hernández González</string>
+    <string name="profesor">M.C.C Rocío Elizabeth Pulido Alba</string>
+    <string name="fecha_real">07/12/2020</string>
+    <string name="nombre_app">Clinical Externo</string>
+
+    <!--Login-->
+    <string name="titulo_login">¡Bienvenido a la Aplicación!</string>
+    <string name="correo_l">Correo electrónico</string>
+    <string name="cont_l">Contraseña</string>
+    <string name="tv_registro">¿Aún no te registras? Da click aquí?</string>
+    <string name="btn_l">Iniciar Sesión</string>
+
+    <!--Registro-->
+    <string name="titulo_reg">Por favor, llene los siguientes campos</string>
+    <string name="nombre_r">Nombre</string>
+    <string name="btn_registro">Registrarse</string>
 </resources>

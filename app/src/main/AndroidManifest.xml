@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClinicaExterna">
+        <activity
+            android:name=".DrawerClinica"
+            android:label="@string/title_activity_drawer_clinica"
+            android:theme="@style/Theme.ClinicaExterna.NoActionBar"></activity>
+        <activity android:name=".RegistroActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

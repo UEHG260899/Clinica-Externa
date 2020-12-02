@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".RegistroActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,12 +13,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="@string/titulo_login"
+            android:text="@string/titulo_reg"
             android:textSize="20sp" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -30,7 +29,7 @@
             android:hint="@string/correo_l">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etCorreoL"
+                android:id="@+id/etEmailR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
@@ -45,27 +44,33 @@
             android:hint="@string/cont_l">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmailR"
+                android:id="@+id/etPassR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnLogin"
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/btn_l" />
+            android:hint="@string/nombre_r">
 
-        <TextView
-            android:id="@+id/textView3"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNomR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegistrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="center"
-            android:text="@string/tv_registro"
-            android:textSize="18sp" />
+            android:text="@string/btn_registro" />
     </LinearLayout>
 </ScrollView>
