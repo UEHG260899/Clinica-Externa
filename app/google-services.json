@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1091608237232",
+    "firebase_url": "https://clinical-remote.firebaseio.com",
+    "project_id": "clinical-remote",
+    "storage_bucket": "clinical-remote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091608237232:android:45f63970eac8b7e9019775",
+        "android_client_info": {
+          "package_name": "com.example.clinicaexterna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091608237232-8ad1bsjupggcoiifgf2r6jpmpb494o4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLJoaj1B6Z3eKAmNBreAjmZmKwLq8w9u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091608237232-8ad1bsjupggcoiifgf2r6jpmpb494o4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

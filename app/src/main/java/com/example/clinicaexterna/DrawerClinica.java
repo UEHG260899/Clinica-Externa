@@ -3,6 +3,8 @@ package com.example.clinicaexterna;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -19,11 +21,13 @@ import androidx.appcompat.widget.Toolbar;
 public class DrawerClinica extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    TextView tvUsuario, tvCorreo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_clinica);
+        Bundle extra = getIntent().getExtras();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -36,6 +40,12 @@ public class DrawerClinica extends AppCompatActivity {
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        //Para poner los datos del usuario en el navigation header
+        View headerView = navigationView.getHeaderView(0);
+        tvUsuario = headerView.findViewById(R.id.tvUsuario);
+        tvUsuario.setText(extra.getString("nombre"));
+        tvCorreo = headerView.findViewById(R.id.tvCorreoUsu);
+        tvCorreo.setText(extra.getString("correo"));
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
