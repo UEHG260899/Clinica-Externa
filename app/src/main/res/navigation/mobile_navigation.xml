@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.clinicaexterna.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_crear"
+        android:name="com.example.clinicaexterna.ui.crear.CrearFragment"
+        android:label="@string/menu_crear"
+        tools:layout="@layout/fragment_crear" />
+
+    <fragment
+        android:id="@+id/nav_editar"
+        android:name="com.example.clinicaexterna.ui.editar.EditarFragment"
+        android:label="@string/menu_editar"
+        tools:layout="@layout/fragment_editar" />
+
+    <fragment
+        android:id="@+id/nav_listar"
+        android:name="com.example.clinicaexterna.ui.listar.ListarFragment"
+        android:label="@string/menu_listar"
+        tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/nav_eliminar"
+        android:name="com.example.clinicaexterna.ui.eliminar.EliminarFragment"
+        android:label="@string/menu_eliminar"
+        tools:layout="@layout/fragment_eliminar" />
+
+    <fragment
+        android:id="@+id/nav_creditos"
+        android:name="com.example.clinicaexterna.ui.creditos.CreditosFragment"
+        android:label="@string/menu_creditos"
+        tools:layout="@layout/fragment_creditos" />
+</navigation>
