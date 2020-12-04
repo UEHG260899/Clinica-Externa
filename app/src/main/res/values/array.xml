@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="opciones">
+        <item>Seleccione un Area</item>
+        <item>Neurocirujia</item>
+        <item>Cardiologia</item>
+        <item>Traumatologia</item>
+        <item>Cirujia</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item>Seleccione un genero</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="o0">
+        <item>No se ha seleccionado un área</item>
+    </string-array>
+
+    <string-array name="o1">
+        <item>Elige un doctor</item>
+        <item>Dr. Garcia</item>
+        <item>Dr. Garcia1</item>
+        <item>Dr. Garcia2</item>
+    </string-array>
+
+
+    <string-array name="o2">
+        <item>Elige un doctor</item>
+        <item>Dr. Garcia3</item>
+        <item>Dr. Garcia4</item>
+        <item>Dr. Garcia5</item>
+    </string-array>
+
+    <string-array name="o3">
+        <item>Elige un doctor</item>
+        <item>Dr. Garcia6</item>
+        <item>Dr. Garcia7</item>
+        <item>Dr. Garcia8</item>
+    </string-array>
+
+    <string-array name="o4">
+        <item>Elige un doctor</item>
+        <item>Dr. Garcia9</item>
+        <item>Dr. Garcia10</item>
+        <item>Dr. Garcia11</item>
+    </string-array>
+
+</resources>
