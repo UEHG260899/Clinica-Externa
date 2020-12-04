@@ -64,7 +64,7 @@
             android:hint="@string/nombre_pac">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etNomPacEd"
+                android:id="@+id/etNomPacC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
@@ -77,14 +77,14 @@
             android:orientation="horizontal">
 
             <Spinner
-                android:id="@+id/spAreaEd"
+                android:id="@+id/spAreaC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1" />
 
             <Spinner
-                android:id="@+id/spDocEd"
+                android:id="@+id/spDocC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -92,7 +92,7 @@
         </LinearLayout>
 
         <Spinner
-            android:id="@+id/spSexoEd"
+            android:id="@+id/spSexoC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp" />
@@ -112,7 +112,7 @@
                 android:hint="@string/fecha_in">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etFechaEd"
+                    android:id="@+id/etFechaC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date" />
@@ -120,7 +120,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageButton
-                android:id="@+id/btnCalendarioEd"
+                android:id="@+id/btnCalendarioC"
                 android:layout_width="246dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -139,7 +139,7 @@
             android:hint="@string/edad">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEdadEd"
+                android:id="@+id/etEdadC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -154,7 +154,7 @@
             android:hint="@string/estatura">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEstEd"
+                android:id="@+id/etEstC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -169,7 +169,7 @@
             android:hint="@string/peso">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPesoEd"
+                android:id="@+id/etPesoC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -182,7 +182,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnLimpiaEd"
+                android:id="@+id/btnLimpiaC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -190,7 +190,7 @@
                 android:text="@string/btn_limpia" />
 
             <Button
-                android:id="@+id/btnEditar"
+                android:id="@+id/btnCrear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
