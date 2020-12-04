@@ -106,4 +106,8 @@ public class Paciente {
     public void setArea(String area) {
         this.area = area;
     }
+
+    public String toString(){
+        return "Paciente " + nombre;
+    }
 }

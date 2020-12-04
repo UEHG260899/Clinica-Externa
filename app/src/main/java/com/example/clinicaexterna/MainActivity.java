@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         intent.putExtra("nombre", recep.getNombre());
                                         intent.putExtra("correo", recep.getCorreo());
                                         startActivity(intent);
+                                        finish();
                                     }
 
                                     @Override
