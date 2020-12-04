@@ -38,6 +38,7 @@
     <string name="btn_buscar">Buscar</string>
     <!--Fragment Listar-->
     <string name="titulo_listar">Listar pacientes</string>
+    <string name="titulo_dialog">Nuevo Paciente</string>
 
     <!--Fragment Eliminar-->
     <string name="titulo_eliminar">Eliminar Pacientes</string>
