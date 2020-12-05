@@ -215,7 +215,7 @@ public class EliminarFragment extends Fragment implements View.OnClickListener {
             @Override
             public void onSuccess(Void aVoid) {
                 limpiar();
-                databaseReference.child(etID.getText().toString()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                databaseReference.child(pacienteSelected.getId()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Registro eliminado de forma satisfactoria", Toast.LENGTH_SHORT).show();
