@@ -138,18 +138,10 @@ public class EliminarFragment extends Fragment implements View.OnClickListener {
                                     cargaImagen(ivFoto);
                                 }
                             } else {
-                                tvNombre.setText("Nombre del paciente: ");
-                                tvfecha.setText("Fecha de ingreso: ");
-                                tvEdad.setText("Edad: ");
-                                tvEstatura.setText("Estatura: ");
-                                tvPeso.setText("Peso: ");
-                                tvGenero.setText("Género: ");
-                                tvDoctor.setText("Doctor: ");
-                                tvArea.setText("Área: ");
-                                ivFoto.setImageResource(R.drawable.ic_menu_camera);
-                                btnLimpia.setEnabled(false);
-                                btnElimina.setEnabled(false);
-                                etID.setError("No hay resultados");
+                                limpiar();
+                                if(getContext() != null){
+                                    Toast.makeText(getContext(), "No hay resultados", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
 
@@ -188,7 +180,6 @@ public class EliminarFragment extends Fragment implements View.OnClickListener {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         aceptar(pacienteSelected.getImg());
-                        limpiar();
                     }
                 });
                 dialogo.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -220,10 +211,11 @@ public class EliminarFragment extends Fragment implements View.OnClickListener {
     }
 
     private void aceptar(String imagen) {
-        databaseReference.child(etID.getText().toString()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+        storageReference.child(imagen).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                storageReference.child(imagen).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+                limpiar();
+                databaseReference.child(etID.getText().toString()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getContext(), "Registro eliminado de forma satisfactoria", Toast.LENGTH_SHORT).show();
