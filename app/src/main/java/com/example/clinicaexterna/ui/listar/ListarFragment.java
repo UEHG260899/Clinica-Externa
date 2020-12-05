@@ -83,7 +83,6 @@ public class ListarFragment extends Fragment {
                         "Doctor: " + pacienteSelected.getDoctor() + "\n" +
                         "Área: " + pacienteSelected.getArea() + "\n");
                 ImageView ivImagen = dialogView.findViewById(R.id.ivFotoDial);
-                System.out.println(storageReference);
                 storageReference.child(pacienteSelected.getImg()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
