@@ -235,16 +235,18 @@ public class EliminarFragment extends Fragment implements View.OnClickListener {
     }
 
     private void cargaImagen(ImageView imageView) {
-        storageReference.child(pacienteSelected.getImg()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Glide.with(getContext()).load(uri).into(imageView);
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getContext(), e.getCause() + "", Toast.LENGTH_LONG).show();
-            }
-        });
+        if(getActivity() != null){
+            storageReference.child(pacienteSelected.getImg()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri uri) {
+                    Glide.with(getContext()).load(uri).into(imageView);
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(getContext(), e.getCause() + "", Toast.LENGTH_LONG).show();
+                }
+            });
+        }
     }
 }
